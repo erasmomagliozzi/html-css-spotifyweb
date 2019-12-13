@@ -85,8 +85,13 @@ body {
 .main-nav-header {
   color: grey;
 }
-.first_list_nav_header {
+/* ul li .logo_nav_header:hover{
   border-left: 3px solid green;
+} */
+.first_list_nav_header:hover {
+  color: white;
+  border-left: 3px solid green;
+  cursor: pointer;
 }
 .logo_spotify {
   width: 50%;
@@ -117,6 +122,10 @@ body {
   margin: 8px 5px 8px 0;
   vertical-align: middle;
 }
+.crea_playlist:hover,
+.add_playlist:hover {
+  color:white;
+}
 /* THIRD SECTION */
 .main-nav-main {
   min-height: 150px;
@@ -130,6 +139,10 @@ body {
 }
 .nome_playlist {
   margin: 5px 0;
+}
+.nome_playlist:hover{
+  color: white;
+  cursor: pointer;
 }
 /* FORTH SECTION */
 .install_app {
@@ -190,6 +203,12 @@ body {
   border-radius: 18px;
   margin-right: 15px;
 }
+.btn:hover {
+  font-size: 16px;
+  padding:11px 28px;
+  margin-right: 13px;
+  border-radius: 21px;
+}
 /* DIV MENU TOP */
 .menu_top {
   margin-top: 95px;
@@ -205,6 +224,10 @@ body {
   font-weight: bold;
   color: grey;
 }
+.a_menu_top:hover {
+  color: white;
+  border-bottom: 2px solid green;
+}
 /* DIV RECENTLY PLAYED */
 .recently_played {
   margin: 20px 10px;
@@ -218,8 +241,37 @@ body {
 .div_img {
   width: calc(100% / 6);
   padding: 15px;
+  position: relative;
   text-align: center;
+  /* transition:.5s ease; */
 }
+.middle {
+  width: 280px;
+  height: 350px;
+  opacity:0;
+  transition: 0.1s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+.div_img:hover {
+  opacity:0.3;
+}
+.middle:hover {
+  opacity:1;
+}
+.play_hover {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .div_img h3 {
   color: white;
   font-size: 15px;
