@@ -258,14 +258,12 @@ body {
 }
 .left_footer {
   display: flex;
+  align-items: center;
   flex-basis: 400px;
 }
 .left_footer img {
   height: 40px;
   margin: 20px 10px;
-}
-.title_song {
-  padding-top: 25px;
 }
 .title_song h4 {
   color: white;
@@ -277,18 +275,47 @@ body {
 }
 .heart,
 .folder {
-  padding-top: 30px;
   padding-left: 15px;
   color: grey;
 }
-
-
-
-
+/* FINE LEFT FOOTER */
 .center_footer {
-
+ text-align: center;
+}
+.btn_music {
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+}
+.down_center_footer {
+  display: flex;
+  align-items: center;
+}
+.down_center_footer p {
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+.line_time_music {
+  width: 500px;
+  height: 5px;
+  background-color: grey;
+  border-radius: 20px;
+  margin: 0 20px;
 }
 .right_footer {
-  background-color: red;
+  display: flex;
+  align-items: center;
 
+}
+.line_volume {
+  width: 100px;
+  height: 5px;
+  background-color: grey;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+.icon_volume {
+  color: lightgrey;
+  padding: 8px;
 }
