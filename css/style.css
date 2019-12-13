@@ -212,29 +212,40 @@ body {
 .recently_played h2 {
   color: white;
 }
-.img_recently_played {
+.img_main_content {
   display: flex;
-
 }
-.div_img_recently {
+.div_img {
   width: calc(100% / 6);
   padding: 15px;
   text-align: center;
 }
-.div_img_recently h3 {
+.div_img h3 {
   color: white;
   font-size: 15px;
   padding: 4px;
 }
-.div_img_recently p {
+.div_img p {
   font-weight: bold;
   font-size: 10px;
   color: grey;
 }
-.img_recently_played img {
+.div_img img {
   width: 95%;
-
 }
+ /* CREATO PER JOHN DOE */
+ .creat_for_john{
+   margin: 20px 10px;
+ }
+ .creat_for_john h2{
+   color: white;
+ }
+ .creat_for_john p {
+   color: grey;
+   font-weight: bold;
+   font-size: 10px;
+   padding-top: 5px;
+ }
 /* footer */
 .footer {
   width: 100%;
