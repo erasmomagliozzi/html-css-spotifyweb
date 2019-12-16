@@ -252,10 +252,6 @@ body {
 .div_img:hover img {
   opacity: 0.5;
 }
-.div_img img {
-  max-width: 95%;
-
-}
 .play_hover {
   opacity: 0;
   color: white;
@@ -265,7 +261,19 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.div_img img {
+  width: 90%;
+  display: block;
+  position: relative;
+}
+.layover {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
 .div_img h3 {
   color: white;
   font-size: 15px;
@@ -345,7 +353,33 @@ body {
   background-color: grey;
   border-radius: 20px;
   margin: 0 20px;
+
 }
+.small_line_time_music {
+  width: 20%;
+  background-color: lightgrey;
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+.round {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+.line_time_music:hover .round {
+  display:block;
+}
+.line_time_music:hover .small_line_time_music{
+  background-color: lime;
+}
+
 .right_footer {
   display: flex;
   align-items: center;
@@ -362,10 +396,16 @@ body {
   color: lightgrey;
   padding: 8px;
 }
-@media screen and (min-width: 992px){
+.line_volume:hover .round {
+  display:block;
+}
+.line_volume:hover .small_line_time_music{
+  background-color: lime;
+}
+@media screen and (min-width: 1279px){
 
 }
-@media screen and (max-width: 992px) and (min-width: 768px){
+@media screen and (max-width: 1278px) and (min-width: 968px){
   .img_main_content{
   display: flex;
   flex-wrap: wrap;
@@ -384,14 +424,14 @@ body {
   height: 235px;
   top:40%;
 }
-.play_hover {
+/* .play_hover {
   top: 42%;
-}
+} */
 .footer {
   max-width: 100%;
 }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 968px){
   .img_main_content{
   display: flex;
   flex-wrap: wrap;
