@@ -329,6 +329,10 @@ body {
   padding-left: 15px;
   color: grey;
 }
+.heart:hover,
+.folder:hover {
+  color: white;
+}
 /* FINE LEFT FOOTER */
 .center_footer {
  text-align: center;
@@ -338,6 +342,11 @@ body {
   padding: 20px;
   font-size: 25px;
 }
+.btn_music:hover {
+  font-size: 30px;
+  padding: 15px;
+}
+
 .down_center_footer {
   display: flex;
   align-items: center;
@@ -395,6 +404,9 @@ body {
 .icon_volume {
   color: lightgrey;
   padding: 8px;
+}
+.icon_volume:hover {
+  color: white;
 }
 .line_volume:hover .round {
   display:block;

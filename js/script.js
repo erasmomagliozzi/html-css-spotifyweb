@@ -1,1 +1,1 @@
-alert('comm')
+alert('comm');
